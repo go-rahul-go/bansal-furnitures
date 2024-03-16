@@ -1,0 +1,134 @@
+.text{
+    width:100%;
+    height:100%;
+    overflow: hidden;
+}
+.box{
+    width:95%;
+    height:60vh;
+    /* border:2px solid black; */
+    position: relative;
+    margin: auto;
+    padding-block: 10px 0px;
+}
+.box1{
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 2px solid rgb(253, 234, 211);
+   
+}
+.box2{
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 2px solid rgb(253, 234, 211);
+}
+.box3{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+#l1{
+    font-size: 9vw;
+    position: absolute;
+    left:2%;
+    bottom:0%;
+    font-weight:600;
+    z-index:3;
+}
+#h{
+    font-size: 20vw;
+    z-index:-1;
+    position: absolute;
+    top:0px;
+}
+#l2{
+    font-size: 9vw;
+    position: absolute;
+    right:2%;
+    bottom:0%;
+    z-index:3;
+    font-weight:600;
+    
+}
+#l3{
+    font-size: 9vw;
+    position: absolute;
+    left:2%;
+    bottom:0%;
+    z-index:3;
+    font-weight:600;
+}
+.text-img1{
+    width:80%;
+    height:95%;
+    /* border:2px solid black; */
+    border-radius: 20px;
+    overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+    
+}
+.text-img1 img{
+    width:80%;
+    height:100%;
+    object-fit: contain;
+   
+}
+.text-img2{
+    width:80%;
+    height:95%;
+    /* border:2px solid black; */
+    border-radius: 20px;
+    overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+    
+}
+.text-img2 img{
+    width:50%;
+    height:100%;
+    object-fit: contain;
+ /* border:2px solid red; */
+}
+.text-img3{
+    width:80%;
+    height:95%;
+    /* border:2px solid black; */
+    border-radius: 20px;
+    overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+    
+}
+.text-img3 img{
+    width:50%;
+    height:90%;
+    object-fit: contain;
+ 
+}
+.orange{
+    color:rgb(255, 115, 0);
+}
+@media (max-width:1024px)
+{
+    .box{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .text-img1,.text-img2,.text-img3{
+        width:100%;
+        height:70%;
+        /* border: 1px solid rgb(255, 203, 166); */
+        /* background: rgb(252, 246, 243); */
+        justify-content: center;
+    }
+    #l1,#l2,#l3{
+        position: relative;
+        font-size: 15vw;
+    }
+}

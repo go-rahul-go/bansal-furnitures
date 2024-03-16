@@ -1,0 +1,35 @@
+.back-nav{
+    width:fit-content;
+    height:40px;
+    border:2px solid black;
+    background-color:rgb(254, 254, 254);
+    color:rgb(19, 19, 19);
+    text-transform:capitalize;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+    margin-left:10px;
+    font-weight: 500;
+    position: absolute;
+    left:10px;
+    top:13vh;
+    padding:2px;
+}
+.back-nav:hover{
+    cursor: pointer;
+    background-color: black;
+    color:white;
+}
+#back-arrow{
+    font-size: 1.6rem;
+}
+
+@media (max-width:1000px) {
+    .back-nav{
+        font-size: 0.8rem;
+        width:fit-content;
+        top:11vh;
+        left:0px;
+    }
+}

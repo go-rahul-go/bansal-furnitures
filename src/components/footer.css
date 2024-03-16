@@ -1,0 +1,131 @@
+.footer{
+    width:100%;
+    height:70vh;
+    background-color:#322212;
+    display: flex;
+    justify-content:flex-start;
+    overflow: hidden;
+    position: relative;
+   
+}
+.foot-links{
+    width:40%;
+    /* border:2px solid papayawhip; */
+    margin-left:40px;
+}
+.links-list{
+    width:100%;
+    height:100%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap:10px;
+}
+.links-list a{
+    text-decoration: none;
+    color:papayawhip;
+    font-size: 1.5rem;
+    border-bottom: 2px solid transparent;
+    text-transform: capitalize;
+}
+.links-list a:hover{
+    border-bottom: 2px solid papayawhip;
+ 
+}
+.earth{
+    width:45%;
+    height:100%;
+    /* border:2px solid red; */
+    position: absolute;
+    right:0%;
+  
+}
+canvas{
+    width:100%;
+    height:100%;
+}
+.foot-logo{
+    width:100%;
+    height:100%;
+    /* border: 2px solid yellow; */
+    color:papayawhip;
+    display: flex;
+   
+    justify-content: flex-start;
+    align-items: center;
+   gap:10px;
+    font-size: 1.2rem;
+    background-color:#261a0d;
+    overflow: hidden;
+    
+  padding:15px 0px;
+}
+#cpy{
+    font-size:1.6rem;
+    display:grid;
+    place-items: center;
+}
+
+.foot-left{
+    width:50%;
+    /* border:1px solid papayawhip; */
+    display: flex;
+    gap:5px;
+}
+.foot-right{
+    width:50%;
+    height:100px;
+    /* border:1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    color:white;
+    gap:5px;
+}
+#phone-num{
+    display: flex;
+    align-items: center;
+    gap:5px;
+}
+@media (max-width:1000px)
+{
+    .footer{
+        background-color: #3B2816;
+    }
+    .foot-links{
+       width:100%;
+       z-index:3;
+       margin:0;
+       
+       /* border:2px solid rgb(0, 246, 20); */
+    }
+    .links-list{
+        justify-content: center;
+        align-items: center;
+    }
+    .links-list a{
+        font-size: 1.8rem;
+    }
+    .earth{
+        width:100%;
+        z-index:1;
+        left:0px
+    }
+    .foot-logo{
+        height:100%;
+        font-size: 1.2rem;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .foot-left{
+        width:95%;
+        justify-content: flex-start;
+
+    }
+    .foot-right{
+        width:95%;
+    }
+}

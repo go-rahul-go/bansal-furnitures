@@ -1,0 +1,92 @@
+:root{
+    --cream:rgb(252, 244, 233);
+    --brown:#322212;
+}
+.features{
+    width:100%;
+    height:100%;
+    /* border:2px solid green; */
+    padding-block: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+    background-color: var(--cream);
+    overflow: hidden;
+}
+
+.f-small{
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+
+#f-big{
+    font-size: 4rem;
+    text-transform: capitalize;
+    color:#3D3522;
+}
+.feature-tile{
+    width:100%;
+    height:60vh;
+    
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    place-items: center;
+    
+    
+}
+.feature-card{
+   
+    width:90%; 
+    height:150px;
+    display: flex;
+    background-color: var(--brown);
+    border-radius: 20px;
+    color:var(--cream);
+    padding-right: 10px;
+}
+.f-card-logo{
+    width:150px;
+    height:150px;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+   
+}
+.f-card-logo img{
+    width:50%;
+    height:50%;
+    
+    
+}
+.f-card-detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.1rem;
+    gap:10px;
+   
+}
+.f-card-h3{
+    text-transform: capitalize;
+}
+@media (max-width:1000px)
+{
+    .feature-tile{
+        grid-template-columns: repeat(1,1fr);
+        height:calc(200px *4)
+    }
+    .feature-card{
+        width:90%;
+    }
+    #f-big{
+        font-size: 2.4rem;
+    }
+    .f-small{
+        font-size:0.95rem;
+    }
+    .f-card-detail{
+        font-size: 1rem;
+    }
+}
